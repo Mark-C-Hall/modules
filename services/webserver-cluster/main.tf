@@ -61,7 +61,7 @@ resource "aws_lb_listener" "webserver-cluster" {
 
     fixed_response {
       content_type = "text/plain"
-      message_body = "404: page not found"
+      message_body = "Error 404: page not found"
       status_code  = 400
     }
   }
