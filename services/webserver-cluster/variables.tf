@@ -48,3 +48,15 @@ variable "max_size" {
   description = "The maximum number of instances to run"
   type        = number
 }
+
+variable "custom_tags" {
+  description = "A map of custom tags to add to all resources"
+  type        = map(string)
+  default     = {}
+}
+
+variable "enableCustomScaling" {
+  description = "Enable custom scaling"
+  type        = bool
+  default     = false
+}
